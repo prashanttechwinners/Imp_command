@@ -1,0 +1,52 @@
+Model Generate
+$ bin/rails generate model Article title:string body:text
+
+
+Adding a column to an existing table in a Rails migration
+  $ bin/rails generate migration AddPartNumberToProducts part_number:string
+Example-$ bin/rails generate migration AddContactDetailsToProducts Contact_Detail:string
+ after that run the rails db:migrate than run the rails c and User->User.connection->User
+
+
+Adding multiple columns to a table
+rails generate migration AddDetailsToUsers name:string salary:decimal email:string
+
+Remove multiple columns to a table
+rails generate migration RemoveDetailsToUsers name:string salary:decimal email:string
+Ex-$ bin/rails generate migration RemoveContactDetailsToUsers Contact_Detail:string
+
+
+How do I make a column unique and index it in a Ruby on Rails migration?
+command-rails g migration AddemailToPeople email:string:uniq:index
+Command-add_index :table_name, [:column_name_a, :column_name_b], unique: true
+
+Remove karne k Liye
+command-rails g migration RemoveemailToPeople email:string:uniq:index
+
+
+Manually Add karna ho to ||
+def change
+    add_column :moderators, :username, :string (not required)
+    add_index :moderators, :username, unique: true
+
+
+    add_index :people, :date_of_birth
+
+Creating a simple index
+  add_index(:suppliers, :name)
+
+Creating a unique index
+  add_index(:accounts, [:branch_id, :party_id], unique: true)
+
+
+
+ check Routes-- rails routes | grep pers
+
+Kill Command -How do you stop a rails server from the command line?
+ killall --9 rails
+ 
+ validates :gender, inclusion: { in: %w(male female) }
+ 
+ -------------------------------------------------
+ 
+ User.last.destroy

@@ -1,0 +1,16 @@
+current directory: /home/lenovo/Imp_command/vendor/bundle/ruby/3.0.0/gems/debug-1.6.2/ext/debug
+/home/lenovo/.rvm/rubies/ruby-3.0.0/bin/ruby -I /home/lenovo/.rvm/rubies/ruby-3.0.0/lib/ruby/3.0.0 -r ./siteconf20220913-788287-qsf231.rb extconf.rb
+creating Makefile
+
+current directory: /home/lenovo/Imp_command/vendor/bundle/ruby/3.0.0/gems/debug-1.6.2/ext/debug
+make "DESTDIR=" clean
+
+current directory: /home/lenovo/Imp_command/vendor/bundle/ruby/3.0.0/gems/debug-1.6.2/ext/debug
+make "DESTDIR="
+compiling debug.c
+compiling iseq_collector.c
+linking shared-object debug/debug.so
+
+current directory: /home/lenovo/Imp_command/vendor/bundle/ruby/3.0.0/gems/debug-1.6.2/ext/debug
+make "DESTDIR=" install
+/usr/bin/install -m 0755 debug.so ./.gem.20220913-788287-q6ljeo/debug

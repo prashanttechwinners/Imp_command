@@ -1,0 +1,63 @@
+1.# Defining Class
+
+$global_variable1 = "GFG"
+
+class Author
+  def instance_method
+    puts "Techwinners #{$global_variable1}, #{$another_global_var}"
+  end
+  def self.class_method
+    $another_global_var = "Welcome to GeeksForGeeks"
+    puts "Tech class method #{$global_variable1}"
+  end
+end
+  
+Author.class_method
+  
+Author = Author.new
+Author.instance_method
+
+
+
+2 # Simple Calling the Method
+
+def num_sum 
+ # variables of method
+a = 5
+b = 10
+sum = a + b
+# return the value of the sum
+  sum
+end
+num_sum   #Call the method for getting the O/P
+
+
+
+4. # Called private method
+class Abc
+    def method_name1  
+      private_a
+      puts "hello123"
+      puts "hello"
+    end
+  private
+    def private_a
+      puts "private_method"
+    end
+end    
+
+ process
+ a = Abc.new
+ a.method_name1
+
+ O/P- private_method
+      hello123
+      hello
+
+
+5. # using pop method
+
+arr = [1,2,3,4,5]
+arr.pop(2)------# here last 2 element will be remove and get the output
+O/P--type arr and got the Output which is left element-->>>>[1,2,3]
+

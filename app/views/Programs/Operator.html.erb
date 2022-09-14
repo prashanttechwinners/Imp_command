@@ -1,0 +1,38 @@
+15  bitwise left-shift "<<" operator used
+num1=4
+num2=3
+
+output = num1 << num2;
+
+print num1," << ", num2," = ",res
+
+#Output is 32 Process ----4 * (2)^3
+
+
+-------------------------------------------------
+ # Pyramid Patterns program
+
+def pyramid
+puts "Enter Number for Rows"
+
+rows = gets.chomp.to_i
+
+for row in 0..rows
+    (rows-row).times {print " "}
+    row.times {print "*"}
+    (row-1).times {print "*" }
+    puts
+end
+
+for row in 0..rows
+    row.times {print " "}
+    (rows-row).times {print "*" }
+    (rows-row-1).times {print "*"}
+    puts
+end
+pyramid
+end
+--------------------------------------------------
+#  Reverse Program
+a = [18, 22, 33, nil, 5, 6]
+ a.reverse

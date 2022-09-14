@@ -1,0 +1,161 @@
+(a)#if Condition used (Type 1)
+
+def eligible (a = 16)
+# if condition to check whether
+# your age is enough for voting
+    if a >= 18
+      puts "You are eligible to vote."
+    else
+      "You are Not ligible to vote."
+    end
+end
+eligible  # Call the method
+
+
+ (b) #if Condition used (Type 2)
+
+a = 15
+# if condition to check
+# whether age is enough for voting
+  if a >= 18
+   "You are eligible to vote."
+  else 
+    "You are not eligible to vote."
+  end
+
+ # Applied Ternary operator
+
+a = 15
+a >=18 ? "You are eligible to vote": "You are not eligible to vote."
+
+----------------------------------------
+
+
+# Ruby program to illustrate the
+# if - else - if statement
+ 
+a = 78 
+if a  < 50  
+  puts "Student is failed" 
+  
+elsif a >= 50 && a <= 60  
+  puts "Student gets D grade" 
+  
+elsif a >= 70 && a <= 80  
+  puts "Student gets B grade"
+   
+elsif a >= 80 && a <= 90  
+  puts "Student gets A grade"
+    
+elsif a >= 90 && a <= 100  
+  puts "Student gets A+ grade"   
+end
+
+
+# Used Via Multiple Ternary operator
+
+a = 45
+a < 50 ? "Student is failed": 
+a >= 50 && a <= 60 ? "Student gets D grade" : 
+a >= 70 && a <= 80 ? "Student gets B grade" :
+a >= 80 && a <= 90 ? "Student gets A grade" : "Student gets A+ grade"
+
+
+# Fibonacci series (0 1 2 3 5,8 13,21,44,65)
+
+# Ruby program for calculating the Nth Fibonacci number.
+def Fibonacci(number)
+  
+  # Base case :  when N is less than 2.
+  if number < 2
+    number
+  else
+  
+    # Recursive call : sum of last two Fibonacci's.
+    Fibonacci(number - 1) + Fibonacci(number - 2)
+  end
+end
+  --------------------------------------
+Fibonacci(3)  # means that 3 is at which position
+ #Ruby for loop using array
+x = ["Blue", "Red", "Green", "Yellow", "White"]   
+for i in x do   
+  puts i   
+end   
+
+#Output--Blue
+# Red
+# Green
+# Yellow
+# White
+# if we replace put i to put x then we got the 5times of the every value
+
+-----------------------------------------------
+10.# defining method geeks that can
+# take any number of arguments 
+Loops
+def geeks (*var)
+     
+   # to display the total number of parameters
+   puts "Number of parameters is: #{var.length}"
+    
+   # using for loop
+   for i in 0...var.length
+      puts "Parameters are: #{var[i]}"
+   end
+end
+ 
+
+# calling method by passing
+# variable number of arguments
+geeks "GFG", "G4G"
+geeks "GeeksforGeeks"
+
+-------------------------------
+11 # variable x
+x = 4
+# using while loop
+# here conditional is x i.e. 4
+while x >= 1
+ 
+# statements to be executed
+  puts "GeeksforGeeks"
+  x = x - 1
+   
+# while loop ends here
+end
+
+------------------------------------------
+12 # while' loop
+arr = [101,"Rahul",15000];
+
+i=0;
+
+while(i<2)
+    puts arr[i];
+    i = i + 1;
+end
+
+--------------------------------------------
+
+13 # Until Loop
+
+var = 7
+ 
+# using until loop
+# here do is optional
+until var == 11 do
+ 
+  # code to be executed
+  puts var * 10
+  var = var + 1
+   
+# here loop ends
+end
+
+process var*10= 7*10 = 70
+      var = 7+1 = 8  = 80
+      var = 8+1 = 9  = 90
+      var = 9+1 = 10 = 100
+
+

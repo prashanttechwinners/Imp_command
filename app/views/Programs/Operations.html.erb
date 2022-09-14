@@ -1,0 +1,68 @@
+1 # Math Operation
+
+class Operations
+  def addition (a = 10, b = 5)
+    puts a + b
+  end  
+
+  def substraction (a = 10, b = 5)
+    puts a - b
+  end  
+
+  def multiplication (a = 10, b = 5)
+    puts $a * b
+  end  
+
+  def division (a = 10, b = 5)
+    puts $a / $b
+  end 
+end  
+
+ # Process a = Operation.new
+    a.addition
+    a.substraction
+
+
+    #Recursion in Ruby
+The process in which a function calls itself directly or indirectly is called recursion and the corresponding function is called a recursive function. Recursion makes the process easier and it definitely reduces a lot of compiling time.
+
+ # Iterative program to execute the summing of a given array of numbers.
+ def iterativeSum(arrayofNumbers)
+  sum = 1
+  arrayofNumbers.each do |number| #Loop of array of number and having single value of the array 
+    sum += number               #assignment Operation
+  end
+  sum  #Return
+end
+ 
+iterativeSum([1,2,3,4,5])       #Call the method   
+
+#O/P--16 
+ # Process-- sum+=number
+ #            1+1=2
+ #            2+2=4
+ #            4+3=7
+ #            7+4=11
+ #            11+5=16--O/P
+### Same we can use with the other asignment opertor like *=, %=, /=
+
+---------------------------------------------------------------------------. # Recursive method to calculate the sum of all numbers in a given array.
+
+def RecursiveSum(arrayofNumbers)
+    # Base Case: If the array is empty, return 0.
+    return 0 if arrayofNumbers.empty?
+   
+    # Recursive code: Adding each element to the variable by calling the method.
+    sum = arrayofNumbers.pop
+    return sum + RecursiveSum(arrayofNumbers)
+end
+
+  RecursiveSum([1,2,3,4,5])----#Call the method
+
+# pop() is a Ruby array method that pops or removes the last element of a given array. It permanently removes the last element of an array.
+# Process 5+1= 6
+          6+2= 8
+          8+3= 11
+         11+4= 15
+
+         *******yaha par 5 jo last elemnt hai wo remove ho gaya so not counted
